@@ -37,85 +37,80 @@
         td {
             text-align: center;
         }
+
+        nav {
+            padding: -3px;
+            word-spacing: 16px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Hello Sir,</h1>
+        <h1>Hello World!</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">FETURES</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
         <hr>
-        <p>Let me introduce myself, I'm <b><i><q>sandip das</q></i></b> & I'm from <b><i><q><a
-                            href="https://en.wikipedia.org/wiki/India" target="_blank"
-                            title="India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world">India</a></q></i></b>.This
-            is my
-            website & I
-            created my own
-            first time. I hope you didn't have any trouble visiting to my website.
-            <br>
-            <br>
-            <em>Thank you, visit again</em>
-        </p>
+        <section>
+            <h4>Introduction:</h4>
+            <p>Let me introduce myself, I'm <b><i><q>sandip das</q></i></b> & I'm from <b><i><q><a
+                                href="https://en.wikipedia.org/wiki/India" target="_blank"
+                                title="India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world">India</a></q></i></b>.This
+                is my
+                website & I
+                created my own
+                first time. I hope you didn't have any trouble visiting to my website.
+                <br>
+                <br>
+                <em>Thank you, visit again</em>
+            </p>
+        </section>
     </header>
+    <hr>
+    <article>
+        <h2><u>Most Populer City in West bengal</u></h2>
+        <article>
+            <h3>Kolkata</h3>
+            <figure>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAuRXhpZgAASUkqAAgAAAABAJiCAgAMAAAAGgAAAAAAAABEYXZpZCBKb3luZXL/7QBMUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAADAcAlAACURlZWpwaWxvdBwCdAAMRGF2aWQgSm95bmVyHAJuAAxHZXR0eSBJbWFnZXP/4QS0aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj4KCTxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CgkJPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczpJcHRjNHhtcENvcmU9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBDb3JlLzEuMC94bWxucy8iICAgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdldHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3JpZ2h0cy8iIGRjOlJpZ2h0cz0iRGF2aWQgSm95bmVyIiBwaG90b3Nob3A6Q3JlZGl0PSJHZXR0eSBJbWFnZXMiIEdldHR5SW1hZ2VzR0lGVDpBc3NldElEPSIxNTcyODcyNzAiIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmdldHR5aW1hZ2VzLmNv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"
+                    alt="_blank">
+                <figcaption><i>Victoria Memorial</i></figcaption>
+            </figure>
+            <details>
+                <summary>Read Me..</summary>
+                <p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India
+                    Company
+                    trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its
+                    grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House,
+                    headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site. </p>
+            </details>
+        </article>
+        <article>
+            <h3>Haldia</h3>
+            <figure>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e8/c2/2f/img-12667861441988-largejpg.jpg?w=500&h=300&s=1"
+                    alt="" width="259px" height="160px">
+                <figcaption><i>City Center Garden Haldia</i></figcaption>
+            </figure>
+            <details>
+                <summary>Read Me..</summary>
+                <p>Haldia is an industrial port city in Purba Medinipur district in the Indian state of West Bengal. It
+                    has
+                    a major river port and industrial belt located approximately 124 km southwest of Kolkata near the
+                    mouth
+                    of the Hooghly River, one of the distributaries of the Ganges.</p>
+            </details>
+        </article>
+    </article>
+    <hr>
     <main>
         <h1><ins>CALENDER</ins></h1>
         <h3><mark>DECEMBER 2022</mark></h3>
-        <!-- <table>
-            <caption style="border: 2px groove black;">Calender 2022</caption>
-            <tr style="font-size: small;">
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
-            <tr style="text-align: center;">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td>31</td>
-            </tr>
-        </table>-->
         <br>
         <h2><u>:Creat an account:</u></h2>
         <div>
@@ -134,7 +129,8 @@
                 </select><br><br>
                 <textarea name="text" id="text" cols="20"
                     rows="5">Type here something about yourself...</textarea><br><br>
-                <button type="button" onclick="alert('Form submited.!')">Submit!</button>
+                <input type="submit" value="Submit" onclick="alert('Form submited.!')">
+                <input type="Reset">
 
             </form>
         </div>
@@ -240,7 +236,7 @@
         <h4>**Greetings**</h4>
         <button onclick="MyFunction()">Click Me!</button>
         <p id="j1"></p>
-                <script>
+        <script>
             function MyFunction() {
                 document.getElementById("j1").innerHTML = "Happy Republic Day 2023";
                 document.getElementById("j1").style.fontSize = "50px";
