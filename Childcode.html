@@ -37,26 +37,65 @@
       text-decoration: underline;
     }
 
-    ul {
+    /*menu bar & sub-menu bar creation style */
+    .menu {
+      background-color: #333;
+      border: 1px solid rgb(230, 163, 20);
+
+    }
+
+    .menu ul {
+      background-color: #333;
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
-      border-radius: 3px;
     }
 
-    li {
+    .menu ul li {
       float: left;
     }
 
-    li a {
-      display: block;
+    .menu ul li a {
+      display: inline-block;
       color: white;
       text-align: center;
       padding: 14px 16px;
+      margin-left: 1px;
       text-decoration: none;
+    }
 
+    .drpmenu {
+      display: inline-block;
+      text-align: center;
+      padding: 14px 14px;
+    }
+
+    .menu ul li a:hover {
+      background-color: orange;
+      color: black;
+    }
+
+    /*.sub_menu1 {
+      display: none;
+    }*/
+
+    .menu ul li:hover .sub_menu1 ul {
+      display: block;
+      position: absolute;
+      width: 93px;
+      z-index: 1;
+      margin-left: 15px;
+    }
+
+    .menu ul li:hover .sub_menu1 ul li {
+      padding-left: 8px;
+    }
+
+    .menu ul li:hover .sub_menu1 ul li a {
+      margin: 0px 7px -4px 9px;
+      display: block;
+      padding: 14px 16px;
     }
 
     .intro {
@@ -66,12 +105,8 @@
       border-radius: 2px;
     }
 
-    /*CSS Links*/
-    li a:hover,
-    a:active {
-      background-color: orange;
-      color: black;
-    }
+
+
 
     .foot {
       text-align: center;
@@ -91,7 +126,7 @@
     }
 
     .div2 {
-      border: 2px solid black;
+      border: 1px solid black;
       outline: #4CAF50 solid 10px;
       margin-top: 30px;
       padding: 0px;
@@ -106,10 +141,12 @@
     .head1,
     .head2,
     .head3 {
-      margin: 26px 0px 26px 0px;
+      margin: 26px 6px 26px 0px;
       padding: 41px 0 41px 12px;
       /*font-size: small;*/
       overflow: auto;
+      border: 2px solid black;
+      background-color: rgba(220, 241, 241, 0.849);
     }
 
     .section1 div>img {
@@ -117,22 +154,43 @@
       padding: 0px 18px 1px 0px;
 
     }
+
+    nav {
+      position: sticky;
+      top: 0;
+    }
+
+    .section1 {
+      display: flex;
+      width: auto;
+      margin: 1px 1px 1px 8px;
+      padding: 1px 0px 0px 1px;
+    }
   </style>
 </head>
 
 <body>
-  <header style="font-size:02vw;">
+  <header style="font-size:2vw;">
     <div class="div1">
       <h1>Hello World! &#128526;</h1>
       <h2>Wellcome! My New Website</h2>
     </div>
-    <nav>
+    <nav class="menu">
       <ul>
         <!--------------------ekhane icon gulo use kora ache--------->
         <li><a href="#"><i class="fa-solid fa-house-chimney" style="margin-right:6px;"></i>Home</a></li>
         <li><a href="#"><i class="fa-solid fa-address-card" style="margin-right:6px;"></i>About us</a></li>
         <li><a href="#"><i class="fa-solid fa-book" style="margin-right:6px;"></i>Services</a></li>
-        <li><a href="#"><i class="fa-solid fa-gift" style="margin-right:6px;"></i>Products</a></li>
+        <!--------------------dropdown list creation--------->
+        <li><a href="#" class="drpmenu"><i class="fa-solid fa-gift" style="margin-right:6px;"></i>Products</a>
+          <div class="sub_menu1">
+            <ul>
+              <li><a href="#">Tea</a></li>
+              <li><a href="#">coffee</a></li>
+              <li><a href="#">water</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a href="#"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>Contuct us</a></li>
       </ul>
     </nav>
@@ -195,7 +253,7 @@
   </article>
   <!--  ei section a.. ekhane box modeling gulo thik ache kina.. opore style ta entry kora ache   -->
   <section class="section1">
-    <div class="head1" style=" border: 5px solid black;">
+    <div class="head1">
       <h2>Heading 1</h2>
       <img
         src="https://images.unsplash.com/photo-1673454753170-83c796e48bd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80"
@@ -205,7 +263,7 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo sequi reprehenderit velit ut aliquid praesentium
         numquam illum non cupiditate autem hic laboriosam est animi unde quibusdam, ab maxime? Quae, cumque.</p>
     </div>
-    <div class="head2" style=" border: 5px solid black;">
+    <div class="head2">
       <h2>Heading 2</h2>
       <img
         src="https://images.unsplash.com/photo-1675410200389-903e50c46cbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -215,7 +273,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum quam, ducimus aperiam quae, tenetur,
         a quaerat id dignissimos voluptatem rerum nostrum. Reiciendis maiores dicta commodi porro saepe neque et.</p>
     </div>
-    <div class="head3" style=" border: 5px solid black;">
+    <div class="head3">
       <h2>Heading 3</h2>
       <img
         src="https://images.unsplash.com/photo-1509817177816-ca503fa03f60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
