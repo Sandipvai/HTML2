@@ -37,65 +37,57 @@
       text-decoration: underline;
     }
 
-    /*menu bar & sub-menu bar creation style */
+    /*style for Nav-menu */
+
     .menu {
-      background-color: #333;
-      border: 1px solid rgb(230, 163, 20);
-
-    }
-
-    .menu ul {
-      background-color: #333;
       list-style-type: none;
+      background-color: black;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    .menu ul li {
+    .menu li {
       float: left;
     }
 
-    .menu ul li a {
-      display: inline-block;
-      color: white;
-      text-align: center;
+    .menu li a,
+    .drp-btn {
+      display: block;
+      color: aliceblue;
       padding: 14px 16px;
-      margin-left: 1px;
       text-decoration: none;
     }
 
-    .drpmenu {
-      display: inline-block;
-      text-align: center;
-      padding: 14px 14px;
-    }
-
-    .menu ul li a:hover {
-      background-color: orange;
+    .menu li a:hover,
+    .drp-dwn:hover .drp-btn {
+      background-color: #ff860e;
       color: black;
     }
+/* style for ropdown menu */
+    .drp-dwn {
+      display: inline-block;
+    }
 
-    /*.sub_menu1 {
+    .drp-ctn {
       display: none;
-    }*/
-
-    .menu ul li:hover .sub_menu1 ul {
-      display: block;
       position: absolute;
-      width: 93px;
+      background-color: black;
+      min-width: 160px;
       z-index: 1;
-      margin-left: 15px;
     }
 
-    .menu ul li:hover .sub_menu1 ul li {
-      padding-left: 8px;
-    }
-
-    .menu ul li:hover .sub_menu1 ul li a {
-      margin: 0px 7px -4px 9px;
+    .drp-ctn a {
       display: block;
+      color: black;
       padding: 14px 16px;
+      text-decoration: none;
+      text-align: left;
+
+    }
+
+    .drp-dwn:hover .drp-ctn {
+      display: block;
     }
 
     .intro {
@@ -175,20 +167,19 @@
       <h1>Hello World! &#128526;</h1>
       <h2>Wellcome! My New Website</h2>
     </div>
-    <nav class="menu">
-      <ul>
+    <nav>
+      <ul class="menu">
         <!--------------------ekhane icon gulo use kora ache--------->
         <li><a href="#"><i class="fa-solid fa-house-chimney" style="margin-right:6px;"></i>Home</a></li>
         <li><a href="#"><i class="fa-solid fa-address-card" style="margin-right:6px;"></i>About us</a></li>
         <li><a href="#"><i class="fa-solid fa-book" style="margin-right:6px;"></i>Services</a></li>
         <!--------------------dropdown list creation--------->
-        <li><a href="#" class="drpmenu"><i class="fa-solid fa-gift" style="margin-right:6px;"></i>Products</a>
-          <div class="sub_menu1">
-            <ul>
-              <li><a href="#">Tea</a></li>
-              <li><a href="#">coffee</a></li>
-              <li><a href="#">water</a></li>
-            </ul>
+        <li class="drp-dwn"><a href="#" class="drp-btn"><i class="fa-solid fa-gift"
+              style="margin-right:6px;"></i>Products</a>
+          <div class="drp-ctn">
+            <a href="#">Tea</a>
+            <a href="#">coffee</a>
+            <a href="#">water</a>
           </div>
         </li>
         <li><a href="#"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>Contuct us</a></li>
