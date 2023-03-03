@@ -158,6 +158,25 @@
       margin: 1px 1px 1px 8px;
       padding: 1px 0px 0px 1px;
     }
+    /* style for search bar */
+    .search-bar {
+float: right;
+    }
+    .search-bar input[type=text] {
+  padding: 6px;
+  margin-top: 13px;
+  font-size: 17px;
+  border: none;
+  border-radius: 14px;
+}
+.search-bar button {
+ 
+  margin-top: 14px;
+  margin-right: 16px;
+  background: black;
+  font-size: 20px;
+  color: white;
+   }
   </style>
 </head>
 
@@ -183,6 +202,13 @@
           </div>
         </li>
         <li><a href="#"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>Contuct us</a></li>
+        <!--Search-bar -->
+        <div class="search-bar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
       </ul>
     </nav>
     <br>
