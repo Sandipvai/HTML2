@@ -200,6 +200,42 @@
       font-size: 20px;
       color: white;
     }
+    /* style for Music wave*/
+    #wave {
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+
+      #Music {
+        text-align: center;
+        margin: 27px;
+      }
+
+      .Wav1,
+      .Wav2,
+      .Wav3,
+      .Wav4,
+      .Wav5 {
+        display: inline-block;
+        width: 5px;
+        height: 2px;
+        background-color: red;
+        animation-name: music-wave;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+      }
+           @keyframes music-wave {
+        from {height: 2px;
+          background-color: red;}
+  to {height: 15px;
+    background-color: rgb(19, 39, 151);}
+      }
+      .Wav1 {animation-delay: 0s;}
+      .Wav2 {animation-delay: 0.2s;}
+      .Wav3 {animation-delay: 0.6s;}
+      .Wav4 {animation-delay: 0.8s;}
+      .Wav5 {animation-delay: 0.10s;}
   </style>
 </head>
 
@@ -325,6 +361,17 @@
       </p>
     </div>
   </section>
+  <!--Music Wave animataion-->
+  <section id="Music">
+    <h1 id="wave">Music wave</h1>
+    <br>
+    <div class="Wav1"></div>
+    <div class="Wav2"></div>
+    <div class="Wav3"></div>
+    <div class="Wav4"></div>
+    <div class="Wav5"></div>
+  </section>
+  <br>
   <footer class="foot">
     <div class="div2">
       <h3>Css outline</h3>
